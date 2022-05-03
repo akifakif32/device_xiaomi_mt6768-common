@@ -238,6 +238,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 
+USE_OPENGL_RENDERER := true
+
 # Enable DM file pre-opting to reduce first boot time
 PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 
