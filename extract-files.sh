@@ -133,6 +133,10 @@ function blob_fixup() {
        [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
+        vendor/lib/librt_extamp_intf.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libtinyxml2.so" "libtinyxml2-v34.so" "${2}"
+            ;;
         *)
             return 1
             ;;
