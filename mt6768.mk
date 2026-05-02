@@ -517,5 +517,13 @@ PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true
 
+# MediaTek Codec2 AIDL Wrapper Configuration (Ported from Millennium)
+$(call soong_config_set_bool,android_hardware_mediatek_codec2,link_v33_libstagefright_foundation,true)
+
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2-mtk-service \
+    libcodec2_vndk.vendor:64 \
+    libcodec2_soft_common.vendor:64
+    
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mt6768-common/mt6768-common-vendor.mk)
