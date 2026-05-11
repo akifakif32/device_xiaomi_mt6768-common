@@ -127,14 +127,12 @@
             <Limit name="concurrent-instances" max="32" />
             <Limit name="performance-point-1280x720" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.avc.decoder" type="video/avc" rank="1">
+        <MediaCodec name="c2.mtk.avc.decoder" type="video/avc" rank="128">
             <Alias name="OMX.MTK.VIDEO.DECODER.AVC" />
             <Limit name="size" min="64x64" max="3840x2160" />
             <Quirk name="wants-NAL-fragments" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-1920x1088" value="60" />
-            <Limit name="performance-point-1280x720" value="120" />
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder.secure" type="video/avc" >
@@ -146,13 +144,11 @@
             <Limit name="concurrent-instances" max="32" />
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc" rank="1">
+        <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc" rank="128">
             <Alias name="OMX.MTK.VIDEO.DECODER.HEVC" />
             <Limit name="size" min="16x16" max="3840x2160" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-1920x1088" value="60" />
-            <Limit name="performance-point-1280x720" value="120" />
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.vpx.decoder" type="video/x-vnd.on2.vp8" >
@@ -162,13 +158,11 @@
             <Limit name="concurrent-instances" max="32" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.vp9.decoder" type="video/x-vnd.on2.vp9" rank="1">
+        <MediaCodec name="c2.mtk.vp9.decoder" type="video/x-vnd.on2.vp9" rank="128">
             <Alias name="OMX.MTK.VIDEO.DECODER.VP9" />
             <Limit name="size" min="16x16" max="3840x2160" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-1920x1088" value="60" />
-            <Limit name="performance-point-1280x720" value="120" />
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder.secure" type="video/x-vnd.on2.vp9" >

@@ -144,6 +144,13 @@ ro.vendor.smvr.p2batch.hd=4
 ro.vendor.jpeg_decode_sw_opt=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 ro.vendor.pref_scale_enable_cfg=1
+media.c2.dmabuf.padding=3072
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.vendor.mtk_md3_support=0
+ro.vendor.mtk_c2k_lte_mode=0
+ro.vendor.mtk_eccci_c2k=1
+ro.vendor.mtk_c2k_support=0
+persist.vendor.md_c2k_cap_dep_check=0
 
 # MediaTek
 ro.vendor.mediatek.version.branch=alps-mp-r0.mp1.tc8sp2
